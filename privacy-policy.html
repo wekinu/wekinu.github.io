@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QRTransfer 개인정보처리방침</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --bg:#f3f6fc;
+    --surface:#ffffff;
+    --ink:#1c2a3a;
+    --muted:#5b6b80;
+    --line:#dfe6f0;
+    --accent:#2f5fd9;
+    --accent-soft:#e8eefc;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0f151d;
+      --surface:#161f2a;
+      --ink:#e7edf5;
+      --muted:#93a3b8;
+      --line:#26303e;
+      --accent:#6f9bff;
+      --accent-soft:#1c2740;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f151d;
+    --surface:#161f2a;
+    --ink:#e7edf5;
+    --muted:#93a3b8;
+    --line:#26303e;
+    --accent:#6f9bff;
+    --accent-soft:#1c2740;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Noto Sans KR",system-ui,-apple-system,"Malgun Gothic",sans-serif;
+    font-size:16px;
+    line-height:1.75;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:56px 24px 96px}
+  header.doc{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:32px 32px 28px;
+    margin-bottom:8px;
+  }
+  .eyebrow{
+    display:inline-block;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--accent);
+    background:var(--accent-soft);
+    padding:4px 10px;
+    border-radius:999px;
+    margin-bottom:14px;
+  }
+  h1{
+    font-size:clamp(24px,4vw,30px);
+    font-weight:700;
+    line-height:1.3;
+    margin:0 0 12px;
+    text-wrap:balance;
+  }
+  .meta{
+    color:var(--muted);
+    font-size:14.5px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 18px;
+    margin:0;
+  }
+  .meta strong{color:var(--ink);font-weight:600}
+  main{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-top:20px;overflow:hidden}
+  section{padding:26px 32px;border-bottom:1px solid var(--line)}
+  section:last-child{border-bottom:none}
+  h2{
+    font-size:18.5px;
+    font-weight:700;
+    margin:0 0 10px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  h2 .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+  p{margin:0 0 12px;max-width:65ch;overflow-wrap:anywhere;color:var(--ink)}
+  p:last-child{margin-bottom:0}
+  p.note{color:var(--muted);font-size:15px}
+  a{color:var(--accent);text-decoration-color:var(--accent);text-underline-offset:2px}
+  code{
+    font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+    font-size:.92em;
+    background:var(--accent-soft);
+    padding:.1em .4em;
+    border-radius:5px;
+  }
+  footer{
+    margin-top:28px;
+    padding:20px 32px;
+    color:var(--muted);
+    font-size:14px;
+  }
+  @media (max-width:560px){
+    .wrap{padding:32px 16px 72px}
+    header.doc,section{padding:22px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="doc">
+    <span class="eyebrow">개인정보처리방침</span>
+    <h1>QRTransfer 개인정보처리방침</h1>
+    <p class="meta">
+      <span>운영자 <strong>gagadodo</strong></span>
+      <span>문의 <strong><a href="mailto:kmymgd@gmail.com">kmymgd@gmail.com</a></strong></span>
+      <span>적용 버전 <strong>0.4.0</strong></span>
+      <span>작성일 <strong>2026-09-14</strong></span>
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2><span class="dot"></span>QR 공유와 광고</h2>
+      <p>회원가입 없이 QR로 내용을 주고받습니다. QR 전송은 인터넷 없이 작동합니다. 개발자 서버로 텍스트, 연락처, 사진 또는 카메라 영상을 전송하지 않으며, 해당 내용과 파일명을 광고 요청이나 맞춤 광고 키워드에 넣지 않습니다.</p>
+      <p>이 버전은 Google AdMob 광고 SDK와 Google 사용자 메시지 플랫폼(UMP)을 사용합니다. 광고와 동의 정보 확인에 인터넷 연결을 사용하며, 홈에 배너 광고를 표시할 수 있습니다. 광고를 불러오지 못해도 QR 전송 기능은 사용할 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2><span class="dot"></span>Google SDK의 데이터 처리</h2>
+      <p>Google 광고 SDK는 광고 제공·분석·부정행위 방지를 위해 IP 주소(대략적인 위치 추정 가능), 앱 실행·광고 상호작용, 진단 정보, 광고 ID·앱 세트 ID 및 해당되는 기기·계정 식별자를 수집하거나 공유할 수 있습니다. SDK 통신에는 TLS 암호화가 사용됩니다. 이 통신과 QR 자체의 비암호화 전송은 서로 다릅니다. UMP는 적용 지역과 선택에 따른 동의 상태를 확인하고 필요한 개인정보 선택 화면을 제공합니다.</p>
+      <p>광고 요청 가능 여부는 UMP의 확인 결과를 따릅니다. 개인정보 선택 변경이 필요한 경우 앱 설정에 '광고 개인정보 선택 변경' 항목이 표시됩니다. Android 설정에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</p>
+      <p class="note">Google 개인정보처리방침: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a><br>SDK 처리 정보: <a href="https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure">developers.google.com/admob/.../play-data-disclosure</a></p>
+    </section>
+
+    <section>
+      <h2><span class="dot"></span>기기에서 처리하는 정보</h2>
+      <p>입력하거나 선택한 텍스트·연락처·사진을 QR로 표시하거나 읽기 위해 기기에서 처리합니다. 카메라 영상은 QR 인식에 사용하며 영상 자체를 녹화하거나 저장하지 않습니다. 연락처 전체 읽기 권한과 사진 전체 접근 권한은 요청하지 않습니다. 사용자가 시스템 선택 화면에서 고른 항목만 읽습니다.</p>
+    </section>
+
+    <section>
+      <h2><span class="dot"></span>저장과 삭제</h2>
+      <p>명함 저장을 선택하면 이름·회사·직함·전화번호·이메일 중 입력한 내용을 앱의 전용 저장소에 보관합니다. 내 명함의 저장본 삭제로 지울 수 있습니다. 전송 설정과 연속 QR 수신 결과의 파일명·크기·시각·기기 정보·성공 여부 등 진단 기록을 기기에 저장합니다. 전송 내용 자체는 진단 기록에 넣지 않습니다.</p>
+      <p>앱 정보의 저장공간에서 데이터 삭제 또는 앱 삭제로 앱 전용 데이터를 지울 수 있습니다. 자동 백업은 사용하지 않습니다. 연속 QR 수신 파일과 사용자가 내보낸 결과 CSV는 다운로드의 <code>QRTransfer</code> 폴더에 남으므로 시스템 파일 앱에서 별도로 삭제해야 합니다. 공유용 임시 파일은 앱 캐시에 저장되며 다음 공유 시 오래된 파일과 용량 한도를 넘는 파일을 정리합니다. 시스템의 캐시 삭제 또는 앱 삭제로도 지울 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2><span class="dot"></span>사용자가 선택한 공유</h2>
+      <p>QR를 표시하면 주변에서 QR를 볼 수 있는 사람이 정보를 읽을 수 있습니다. 전송은 암호화되지 않습니다. 원본 사진에는 촬영 위치 등의 메타데이터가 포함될 수 있습니다. 크기 줄여 보내기로 만든 JPEG에는 원본 메타데이터를 복사하지 않습니다. 다른 앱으로 공유하거나 연락처 추가를 선택한 뒤에는 해당 앱의 저장·처리 정책이 적용됩니다.</p>
+    </section>
+
+    <section>
+      <h2><span class="dot"></span>권한</h2>
+      <p>카메라 권한은 수신 기능에만 필요하며 거부해도 송신 기능은 사용할 수 있습니다. 인터넷·네트워크 상태·광고 식별자 관련 권한은 광고 SDK에 사용됩니다. Android 설정에서 카메라 권한과 광고 개인정보 선택을 변경할 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2><span class="dot"></span>문의</h2>
+      <p>Google Play의 QRTransfer 스토어 페이지에 표시된 개발자 연락처, 또는 <a href="mailto:kmymgd@gmail.com">kmymgd@gmail.com</a>으로 문의할 수 있습니다.</p>
+    </section>
+  </main>
+
+  <footer>이 방침은 QRTransfer(패키지 <code>qrx.app</code>) 0.4.0 기준이며 기능이 바뀌면 갱신합니다.</footer>
+</div>
+</body>
+</html>
