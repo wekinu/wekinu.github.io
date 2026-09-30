@@ -127,8 +127,8 @@
     <p class="meta">
       <span>운영자 <strong>gagadodo</strong></span>
       <span>문의 <strong><a href="mailto:kmymgd@gmail.com">kmymgd@gmail.com</a></strong></span>
-      <span>적용 버전 <strong>0.7</strong></span>
-      <span>시행일 <strong>2026-09-15</strong></span>
+      <span>적용 버전 <strong>0.8.0</strong></span>
+      <span>개정일 <strong>2026-09-30</strong></span>
     </p>
   </header>
 
@@ -138,7 +138,7 @@
       <ul>
         <li>사진과 사진 정보는 <strong>기기 안에서만</strong> 처리하며 개발자 서버로 전송하지 않습니다.</li>
         <li>계정 생성과 로그인이 없습니다.</li>
-        <li>이 버전에는 광고 SDK, 분석 SDK, 결제 기능이 없습니다.</li>
+        <li>0.8.0에는 Google AdMob 홈 배너와 Google UMP 개인정보 선택 기능이 포함됩니다. 별도 분석 SDK와 결제 기능은 사용하지 않습니다.</li>
         <li>사진 삭제는 사용자가 직접 실행하고 안드로이드 시스템 승인을 마쳤을 때만 수행됩니다.</li>
       </ul>
     </section>
@@ -169,9 +169,11 @@
     </section>
 
     <section>
-      <h2><span class="dot"></span>네트워크와 제3자</h2>
-      <p>이 버전의 배포 빌드에는 광고 SDK, 분석 SDK, 크래시 수집 SDK, 결제 기능이 포함되어 있지 않습니다. 사진 정리 기능은 인터넷 연결 없이 동작하며, 매듭은 사용자의 데이터를 제3자와 공유하거나 판매하지 않습니다.</p>
-      <p class="note">앞으로 광고, 결제, 분석 기능을 추가하는 경우 이 방침과 Google Play의 데이터 보안 신고를 함께 갱신한 뒤 적용합니다.</p>
+      <h2><span class="dot"></span>홈 광고, 네트워크와 제3자</h2>
+      <p>0.8.0에는 Google AdMob 배너와 Google User Messaging Platform(UMP)이 포함됩니다. 광고는 홈의 사진 묶음 목록과 하단 메뉴 아래에만 표시하며, 사진 선택·크게 보기·한 장씩 보기·최종 삭제 화면에는 표시하지 않습니다. 사진 정리 기능은 인터넷 연결 없이 사용할 수 있습니다. 광고 SDK가 없는 이전 0.7 배포 빌드에는 이 광고 항목이 적용되지 않습니다.</p>
+      <p>앱은 사진 원본·파일명·저장 경로·촬영 정보·남김/정리 판단을 광고 요청에 넣지 않습니다. Google 광고 SDK는 광고 제공, 분석, 부정행위 방지를 위해 IP 주소와 이를 통한 대략적인 위치, 앱·광고 상호작용, 진단 정보, 광고 ID·앱 세트 ID 등 기기 또는 기타 식별자를 수집·공유할 수 있습니다. 광고 및 동의 SDK가 처리하는 정보는 개발자의 사진 정리 기록과 구분됩니다. 광고 SDK가 수집하는 데이터는 TLS로 전송됩니다.</p>
+      <p>앱은 UMP가 광고 요청을 허용한 뒤에만 광고 SDK를 초기화하고 배너를 요청합니다. 동의가 필요한 지역에서는 UMP 동의 화면을 제공하며, 필요한 경우 설정의 ‘광고 개인정보 선택’에서 선택을 변경할 수 있습니다. 동의 화면이나 광고를 받지 못해도 사진 정리 기능은 사용할 수 있습니다. Android 설정에서 광고 ID를 재설정하거나 삭제할 수 있으며, 이는 모든 기기 식별자 처리를 중단하는 것과 같지 않습니다.</p>
+      <p class="note">Google의 데이터 이용에 관한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a> 및 <a href="https://policies.google.com/technologies/ads">광고 관련 안내</a>에서 확인할 수 있습니다. 앱은 사진·판단 기록을 개발자 서버에 보관하지 않습니다. Google SDK가 수집한 정보의 보관·삭제는 Google의 정책과 설정을 따릅니다.</p>
     </section>
 
     <section>
@@ -193,7 +195,7 @@
     </section>
   </main>
 
-  <footer>이 방침은 매듭(패키지 <code>kr.maedeup.scan</code>) 0.7 기준이며 기능이 바뀌면 갱신합니다.</footer>
+  <footer>이 방침은 매듭(패키지 <code>kr.maedeup.scan</code>) 0.8.0 기준이며 기능이 바뀌면 갱신합니다. 광고 SDK가 없는 이전 0.7 배포 빌드에는 광고 항목이 적용되지 않습니다.</footer>
 </div>
 </body>
 </html>
