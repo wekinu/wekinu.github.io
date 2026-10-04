@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QRTransfer privacy policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --bg:#f3f6fc;
+    --surface:#ffffff;
+    --ink:#1c2a3a;
+    --muted:#5b6b80;
+    --line:#dfe6f0;
+    --accent:#2f5fd9;
+    --accent-soft:#e8eefc;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0f151d;
+      --surface:#161f2a;
+      --ink:#e7edf5;
+      --muted:#93a3b8;
+      --line:#26303e;
+      --accent:#6f9bff;
+      --accent-soft:#1c2740;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f151d;
+    --surface:#161f2a;
+    --ink:#e7edf5;
+    --muted:#93a3b8;
+    --line:#26303e;
+    --accent:#6f9bff;
+    --accent-soft:#1c2740;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Noto Sans KR",system-ui,-apple-system,"Malgun Gothic",sans-serif;
+    font-size:16px;
+    line-height:1.75;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:56px 24px 96px}
+  header.doc{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:32px 32px 28px;
+    margin-bottom:8px;
+  }
+  .eyebrow{
+    display:inline-block;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--accent);
+    background:var(--accent-soft);
+    padding:4px 10px;
+    border-radius:999px;
+    margin-bottom:14px;
+  }
+  h1{
+    font-size:clamp(24px,4vw,30px);
+    font-weight:700;
+    line-height:1.3;
+    margin:0 0 12px;
+    text-wrap:balance;
+  }
+  .meta{
+    color:var(--muted);
+    font-size:14.5px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 18px;
+    margin:0;
+  }
+  .meta strong{color:var(--ink);font-weight:600}
+  main{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-top:20px;overflow:hidden}
+  section{padding:26px 32px;border-bottom:1px solid var(--line)}
+  section:last-child{border-bottom:none}
+  h2{
+    font-size:18.5px;
+    font-weight:700;
+    margin:0 0 10px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  h2 .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+  p{margin:0 0 12px;max-width:65ch;overflow-wrap:anywhere;color:var(--ink)}
+  p:last-child{margin-bottom:0}
+  p.note{color:var(--muted);font-size:15px}
+  a{color:var(--accent);text-decoration-color:var(--accent);text-underline-offset:2px}
+  code{
+    font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+    font-size:.92em;
+    background:var(--accent-soft);
+    padding:.1em .4em;
+    border-radius:5px;
+  }
+  footer{
+    margin-top:28px;
+    padding:20px 32px;
+    color:var(--muted);
+    font-size:14px;
+  }
+  @media (max-width:560px){
+    .wrap{padding:32px 16px 72px}
+    header.doc,section{padding:22px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="doc"><span class="eyebrow">Privacy policy</span><h1>QRTransfer privacy policy</h1><p class="meta"><span>Operator <strong>gagadodo</strong></span><span>Contact <strong><a href="mailto:kmymgd@gmail.com">kmymgd@gmail.com</a></strong></span><span>Applicable version <strong>0.6.1</strong></span><span>Written <strong>2026-10-03</strong></span></p></header>
+
+  <main><section><h2><span class="dot"></span>QR sharing and advertising</h2><p>Share content by QR without an account. QR transfer works without internet. Text, contacts, photos, and camera footage are not sent to a developer server. This content and file names are not included in ad requests or personalized advertising keywords.</p><p>This version uses the Google AdMob advertising SDK and Google&#x27;s User Messaging Platform (UMP). Internet is used to load ads and check consent information, and a banner ad may appear on Home. QR transfer remains available if ads cannot load.</p></section><section><h2><span class="dot"></span>Google SDK data processing</h2><p>Fast file transfer uses the Nearby Connections SDK in Google Play services. Your selected file is sent directly to the connected device, and the Nearby connection is encrypted. Google&#x27;s Nearby SDK collects usage diagnostics such as performance, connection latency, reliability, throughput, device model, country, build version, and app package name to improve the user experience. You can allow or refuse this collection in Android Settings under Google &gt; Usage &amp; diagnostics. Details: <a href="https://developers.google.com/nearby/connections/overview#data_collection">https://developers.google.com/nearby/connections/overview#data_collection</a></p><p>Google&#x27;s advertising SDK may collect or share IP addresses (which can estimate approximate location), app launches and ad interactions, diagnostic information, advertising IDs, app set IDs, and applicable device or account identifiers to serve and analyze ads and prevent fraud. SDK communication uses TLS encryption. This communication is separate from unencrypted QR transfer. UMP checks consent status according to the applicable region and choices and provides privacy choice screens when needed.</p><p>Whether ad requests are allowed follows UMP&#x27;s result. If privacy choices need to be available, Change ad privacy choices appears in the app settings. You can reset or delete your advertising ID in Android settings. Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>SDK processing details: <a href="https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure">https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure</a></p></section><section><h2><span class="dot"></span>Information processed on your device</h2><p>Text, contacts, and photos you enter or select are processed on your device to display or read QR codes. Camera footage is used for QR recognition and is not itself recorded or saved. The app does not request permission to read all contacts or access all photos. Only items you choose in the system picker are read.</p></section><section><h2><span class="dot"></span>Storage and deletion</h2><p>Photos selected in QR tools are used for QR recognition on your device. Photos and scanned content are not sent to a developer server, and no scan history is saved automatically. Wi-Fi QR codes are generated from a network name selected from the list or entered manually and a password you enter. Choosing Save to library stores QR content and names, and QR card titles and instructions, encrypted with an Android Keystore key in app-private storage. You can delete individual entries in the library or remove them by clearing app data or uninstalling the app.</p><p>Tapping Allow location permission in the Wi-Fi list requests precise location permission. Once allowed, the app reads the currently connected Wi-Fi name and nearby network names, security types, and signal strengths on your device. Access point identifiers (BSSID) are compared temporarily to identify the connection. Scan lists and BSSIDs are not saved to files or servers or included in ad requests. Location coordinates and saved Wi-Fi passwords are not read. Location must be turned on, and the app waits for scan results only while the list screen is active. You change settings and permissions yourself.</p><p>Save as image or Save image and share saves QR codes and QR cards as PNG files in the QRTransfer album in your gallery. Exported images are not encrypted, and information such as passwords in the QR can be read. They remain after uninstalling the app and must be deleted in your gallery.</p><p>Choosing Save my card stores the name, company, job title, phone number, and email you enter in app-private storage. Delete saved card removes it. Transfer settings and diagnostic records for continuous QR receiving, including file names, sizes, times, device information, and success status, are stored on your device. Transfer content itself is not included in diagnostic records.</p><p>Clear app data in the app&#x27;s storage settings or uninstall the app to remove app-private data. Automatic backup is not used. Files received through continuous QR and exported result CSV files remain in the QRTransfer folder in Downloads and must be deleted separately with the system files app. Temporary sharing files are stored in app cache; old files and files beyond the size limit are removed on the next share. Clearing system cache or uninstalling the app also removes them.</p></section><section><h2><span class="dot"></span>Sharing you choose</h2><p>When content is displayed as regular or continuous QR, nearby people who can see the QR can read it. These QR transfers are not encrypted. A fast transfer connection QR contains only a temporary connection identifier, not file content. After comparing verification codes and approving the connection on both phones, the file is transferred over an encrypted wireless connection. Original photos may contain metadata such as photo location. JPEG files made with Resize to send do not copy original metadata. After sharing with another app or choosing to add a contact, that app&#x27;s storage and processing policies apply.</p></section><section><h2><span class="dot"></span>Permissions</h2><p>Camera permission is used to receive QR and scan fast transfer connection QR. Nearby device permissions (Bluetooth and Wi-Fi) are requested when you select fast transfer. Android 10–12 versions need location permission and Location turned on for nearby device discovery; the app does not read or record location coordinates. Full file access is not requested; only files chosen in the system picker are read. Internet and network state permissions are used by advertising SDKs and Nearby&#x27;s network connection between devices. Advertising identifier permissions are used by advertising SDKs. You can change app permissions in Android settings.</p></section><section><h2><span class="dot"></span>Fast transfer file storage</h2><p>A temporary copy of the file selected for sending is made in app cache and removed on completion or cancellation. It may remain if the app is forcibly stopped; clear system cache or uninstall the app to remove it. Received files are saved to the QRTransfer folder in Downloads and remain after uninstalling the app, so delete them yourself in a files app.</p></section><section><h2><span class="dot"></span>Contact</h2><p>Use the developer contact shown on the QRTransfer Google Play listing, or email <a href="mailto:kmymgd@gmail.com">kmymgd@gmail.com</a>.</p></section></main>
+
+  <footer>This policy covers QRTransfer (package <code>qrx.app</code>) 0.6.1 and will be updated when its features change.</footer>
+</div>
+</body>
+</html>
