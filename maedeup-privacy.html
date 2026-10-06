@@ -1,201 +1,39 @@
 <!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>매듭 개인정보처리방침</title>
-<meta name="description" content="매듭(kr.maedeup.scan) 안드로이드 앱의 개인정보처리방침. 사진은 기기 안에서만 처리하며 서버로 전송하지 않습니다.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
-<style>
-  :root{
-    --bg:#f3f6fc;
-    --surface:#ffffff;
-    --ink:#1c2a3a;
-    --muted:#5b6b80;
-    --line:#dfe6f0;
-    --accent:#2f5fd9;
-    --accent-soft:#e8eefc;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#0f151d;
-      --surface:#161f2a;
-      --ink:#e7edf5;
-      --muted:#93a3b8;
-      --line:#26303e;
-      --accent:#6f9bff;
-      --accent-soft:#1c2740;
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#0f151d;
-    --surface:#161f2a;
-    --ink:#e7edf5;
-    --muted:#93a3b8;
-    --line:#26303e;
-    --accent:#6f9bff;
-    --accent-soft:#1c2740;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:"Noto Sans KR",system-ui,-apple-system,"Malgun Gothic",sans-serif;
-    font-size:16px;
-    line-height:1.75;
-  }
-  .wrap{max-width:720px;margin:0 auto;padding:56px 24px 96px}
-  header.doc{
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:16px;
-    padding:32px 32px 28px;
-    margin-bottom:8px;
-  }
-  .eyebrow{
-    display:inline-block;
-    font-size:12.5px;
-    font-weight:600;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    color:var(--accent);
-    background:var(--accent-soft);
-    padding:4px 10px;
-    border-radius:999px;
-    margin-bottom:14px;
-  }
-  h1{
-    font-size:clamp(24px,4vw,30px);
-    font-weight:700;
-    line-height:1.3;
-    margin:0 0 12px;
-    text-wrap:balance;
-  }
-  .meta{
-    color:var(--muted);
-    font-size:14.5px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:6px 18px;
-    margin:0;
-  }
-  .meta strong{color:var(--ink);font-weight:600}
-  main{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-top:20px;overflow:hidden}
-  section{padding:26px 32px;border-bottom:1px solid var(--line)}
-  section:last-child{border-bottom:none}
-  h2{
-    font-size:18.5px;
-    font-weight:700;
-    margin:0 0 10px;
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-  h2 .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
-  p{margin:0 0 12px;max-width:65ch;overflow-wrap:anywhere;color:var(--ink)}
-  p:last-child{margin-bottom:0}
-  p.note{color:var(--muted);font-size:15px}
-  ul{margin:0 0 12px;padding-left:20px;max-width:65ch}
-  ul:last-child{margin-bottom:0}
-  li{margin:0 0 6px}
-  a{color:var(--accent);text-decoration-color:var(--accent);text-underline-offset:2px}
-  code{
-    font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
-    font-size:.92em;
-    background:var(--accent-soft);
-    padding:.1em .4em;
-    border-radius:5px;
-  }
-  footer{
-    margin-top:28px;
-    padding:20px 32px;
-    color:var(--muted);
-    font-size:14px;
-  }
-  @media (max-width:560px){
-    .wrap{padding:32px 16px 72px}
-    header.doc,section{padding:22px}
-  }
-</style>
-</head>
-<body>
-<div class="wrap">
-  <header class="doc">
-    <span class="eyebrow">개인정보처리방침</span>
-    <h1>매듭 개인정보처리방침</h1>
-    <p class="meta">
-      <span>운영자 <strong>gagadodo</strong></span>
-      <span>문의 <strong><a href="mailto:kmymgd@gmail.com">kmymgd@gmail.com</a></strong></span>
-      <span>적용 버전 <strong>0.8.0</strong></span>
-      <span>개정일 <strong>2026-09-30</strong></span>
-    </p>
-  </header>
-
-  <main>
-    <section>
-      <h2><span class="dot"></span>한눈에 보기</h2>
-      <ul>
-        <li>사진과 사진 정보는 <strong>기기 안에서만</strong> 처리하며 개발자 서버로 전송하지 않습니다.</li>
-        <li>계정 생성과 로그인이 없습니다.</li>
-        <li>0.8.0에는 Google AdMob 홈 배너와 Google UMP 개인정보 선택 기능이 포함됩니다. 별도 분석 SDK와 결제 기능은 사용하지 않습니다.</li>
-        <li>사진 삭제는 사용자가 직접 실행하고 안드로이드 시스템 승인을 마쳤을 때만 수행됩니다.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><span class="dot"></span>사진 접근과 이용 목적</h2>
-      <p>매듭은 사용자가 허용한 사진과 그 사진의 촬영 시각, 저장 경로, 파일 크기를 기기 안에서 읽습니다. 이 정보는 사진을 촬영 시기별 묶음으로 정리하고, 비슷한 사진을 나란히 비교해 남길 사진과 정리할 사진을 고르는 데에만 사용합니다.</p>
-      <p>사진 정리는 한 번의 파일 첨부가 아니라 사진 보관함 전체를 반복해서 훑어보는 작업이므로 사진 접근 권한이 앱의 핵심 기능에 필요합니다. 안드로이드의 '일부 사진만 허용'을 선택하면 매듭은 선택한 사진만 읽습니다.</p>
-      <p>사진, 사진의 메타데이터, 사용자의 남김·정리 판단을 개발자 서버나 제3자에게 전송하지 않습니다.</p>
-    </section>
-
-    <section>
-      <h2><span class="dot"></span>기기에 저장되는 정보</h2>
-      <p>다음 정보를 앱 내부 데이터베이스에 저장합니다. 모두 기기 안에만 남습니다.</p>
-      <ul>
-        <li>사진별 남김·정리 판단 기록</li>
-        <li>묶음(사건) 완료 시점의 사진 식별자 목록과 완료 시각</li>
-        <li>화면 표시를 위한 사진 미리보기 캐시</li>
-      </ul>
-      <p>계정 정보, 위치 권한, 연락처 권한은 요구하지 않습니다. 앱 기록의 클라우드 자동 백업과 기기 간 전송은 사용하지 않도록 설정되어 있습니다.</p>
-    </section>
-
-    <section>
-      <h2><span class="dot"></span>사진 삭제 처리</h2>
-      <p>매듭은 사용자가 최종 검토 화면에서 직접 실행한 경우에만 사진을 처리합니다. 실행하면 안드로이드 시스템이 삭제 승인 창을 띄우며, 사용자가 승인한 사진만 휴지통으로 이동하거나 영구 삭제됩니다. 승인을 취소하면 해당 사진은 그대로 남습니다.</p>
-      <p>휴지통으로 이동한 사진의 보관 기간과 복원 방법은 기기의 사진 앱과 안드로이드 버전을 따릅니다. 영구 삭제는 되돌릴 수 없습니다. 안드로이드 10에서는 시스템이 휴지통을 지원하지 않으므로 사진마다 개별 승인 후 삭제만 제공합니다.</p>
-      <p>판단을 표시하거나 묶음을 완료하는 것만으로는 사진이 삭제되지 않습니다.</p>
-    </section>
-
-    <section>
-      <h2><span class="dot"></span>홈 광고, 네트워크와 제3자</h2>
-      <p>0.8.0에는 Google AdMob 배너와 Google User Messaging Platform(UMP)이 포함됩니다. 광고는 홈의 사진 묶음 목록과 하단 메뉴 아래에만 표시하며, 사진 선택·크게 보기·한 장씩 보기·최종 삭제 화면에는 표시하지 않습니다. 사진 정리 기능은 인터넷 연결 없이 사용할 수 있습니다. 광고 SDK가 없는 이전 0.7 배포 빌드에는 이 광고 항목이 적용되지 않습니다.</p>
-      <p>앱은 사진 원본·파일명·저장 경로·촬영 정보·남김/정리 판단을 광고 요청에 넣지 않습니다. Google 광고 SDK는 광고 제공, 분석, 부정행위 방지를 위해 IP 주소와 이를 통한 대략적인 위치, 앱·광고 상호작용, 진단 정보, 광고 ID·앱 세트 ID 등 기기 또는 기타 식별자를 수집·공유할 수 있습니다. 광고 및 동의 SDK가 처리하는 정보는 개발자의 사진 정리 기록과 구분됩니다. 광고 SDK가 수집하는 데이터는 TLS로 전송됩니다.</p>
-      <p>앱은 UMP가 광고 요청을 허용한 뒤에만 광고 SDK를 초기화하고 배너를 요청합니다. 동의가 필요한 지역에서는 UMP 동의 화면을 제공하며, 필요한 경우 설정의 ‘광고 개인정보 선택’에서 선택을 변경할 수 있습니다. 동의 화면이나 광고를 받지 못해도 사진 정리 기능은 사용할 수 있습니다. Android 설정에서 광고 ID를 재설정하거나 삭제할 수 있으며, 이는 모든 기기 식별자 처리를 중단하는 것과 같지 않습니다.</p>
-      <p class="note">Google의 데이터 이용에 관한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a> 및 <a href="https://policies.google.com/technologies/ads">광고 관련 안내</a>에서 확인할 수 있습니다. 앱은 사진·판단 기록을 개발자 서버에 보관하지 않습니다. Google SDK가 수집한 정보의 보관·삭제는 Google의 정책과 설정을 따릅니다.</p>
-    </section>
-
-    <section>
-      <h2><span class="dot"></span>권한</h2>
-      <p>매듭은 사진을 읽기 위해 사진 접근 권한을 사용합니다. 안드로이드 13 이상에서는 <code>READ_MEDIA_IMAGES</code> 또는 사용자가 고른 사진만 허용하는 <code>READ_MEDIA_VISUAL_USER_SELECTED</code>를, 안드로이드 12 이하에서는 <code>READ_EXTERNAL_STORAGE</code>를 사용합니다.</p>
-      <p>기기 설정의 앱 권한에서 언제든지 접근을 취소하거나 허용 범위를 바꿀 수 있습니다. 앱은 홈 화면으로 돌아올 때마다 현재 허용된 범위를 다시 읽어 그 범위만 표시합니다. 접근을 거부하면 사진 정리 기능은 사용할 수 없습니다.</p>
-    </section>
-
-    <section>
-      <h2><span class="dot"></span>보관과 삭제</h2>
-      <p>앱 내부 기록은 사용자가 직접 초기화하거나, 기기 설정에서 앱 데이터를 삭제하거나, 앱을 제거할 때까지 보관합니다. 설정의 '판단 기록 모두 지우기'는 판단과 완료 기록만 지우며 사진 원본에는 영향을 주지 않습니다.</p>
-      <p>미리보기 캐시는 기기 설정의 앱 저장공간에서 지울 수 있습니다. 앱을 제거하면 앱이 기기에 저장한 정보는 모두 삭제됩니다.</p>
-    </section>
-
-    <section>
-      <h2><span class="dot"></span>변경 안내와 문의</h2>
-      <p>이 방침이 바뀌면 이 페이지의 시행일을 갱신하고, 중요한 변경은 앱 안에서 안내합니다.</p>
-      <p>개인정보 관련 문의는 <a href="mailto:kmymgd@gmail.com">kmymgd@gmail.com</a> 또는 Google Play의 매듭 스토어 페이지에 표시된 개발자 연락처로 보내주세요.</p>
-    </section>
-  </main>
-
-  <footer>이 방침은 매듭(패키지 <code>kr.maedeup.scan</code>) 0.8.0 기준이며 기능이 바뀌면 갱신합니다. 광고 SDK가 없는 이전 0.7 배포 빌드에는 광고 항목이 적용되지 않습니다.</footer>
-</div>
-</body>
-</html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>매듭 개인정보 처리방침</title>
+<style>body{margin:0;background:#faf8f3;color:#282d28;font:17px/1.8 system-ui,sans-serif}main{max-width:840px;margin:auto;padding:32px 24px 64px}h1{font-size:30px}h2{font-size:22px;margin-top:40px}p{white-space:normal}a{color:#32583d;overflow-wrap:anywhere}section{margin-bottom:24px}</style></head><body><main><h1>매듭 개인정보 처리방침</h1><p>적용: 매듭 0.8.0의 사진 처리·홈 광고 및 0.8.1의 선택 사용 분석 · 개정일: 2026년 10월 6일<br>
+사진 처리와 홈 광고에 관한 내용은 0.8.0에도 적용됩니다. 선택 사용 분석은 0.8.1을 설치한 후 사용자가 직접 동의한 경우에만 추가됩니다. 0.8.0에는 별도 분석 SDK가 없습니다.<br>
+공개 정책: <a href="https://wekinu.github.io/maedeup-privacy.html">https://wekinu.github.io/maedeup-privacy.html</a></p>
+<section><h2>1. 사진 접근과 이용 목적</h2><p>매듭은 사용자가 허용한 사진과 촬영 시각, 저장 경로, 파일 크기를 기기 안에서 읽어 시기별 사건으로 묶고, 남길 사진과 정리할 사진을 고르는 데 이용합니다. 일부 사진만 허용하면 해당 사진만 접근합니다. 사진, 사진 메타데이터, 판단 기록을 개발자 서버로 전송하지 않습니다.</p></section>
+<section><h2>2. 기기에 저장되는 정보</h2><p>사진별 남김·정리 판단, 사건 완료 당시 사진 식별자 목록과 완료 시각을 앱 내부 데이터베이스에 저장합니다. 사진 미리보기는 기기 내부 캐시에 남을 수 있습니다. 계정 생성과 로그인이 없으며, 위치 권한과 연락처 권한을 요청하지 않습니다. 결제 SDK는 사용하지 않습니다. 사용 기록 선택과 로컬 중복 방지 상태는 판단 기록과 별도로 저장되며 앱 데이터 삭제·앱 제거 시 지워집니다.</p></section>
+<section><h2>3. 앱 개선용 사용 기록 · 선택</h2><p>사용자가 &#x27;앱 개선용 사용 기록&#x27;을 직접 켠 경우에만 Google Analytics for Firebase에 최소 사용 기록을 보냅니다. 처음에는 꺼져 있고 거부해도 사진 정리 기능은 같습니다. 설정에서 언제든 끌 수 있습니다.<br>
+앱이 기록하는 항목은 앱 복귀(첫 사용/재사용), 사진 접근 범위(없음/일부/전체), 묶음 열기, 첫 정리 완료와 정리 완료, 사진 읽기 실패 단계의 고정 코드입니다. 실패는 photo_scan/read_failed라는 두 열거값만 보내며 원본 예외 메시지·스택·사용자 입력은 보내지 않습니다. 같은 복귀 구간에서는 실패 코드를 한 번만 기록합니다. 묶음 식별자와 사진 수는 전송하지 않습니다. 중복 완료를 막기 위한 해시와 첫 완료 여부는 기기 안에만 저장합니다. &#x27;첫 완료&#x27;는 사용 기록 동의 후 이 설치에서 처음 기록한 완료를 뜻하며 동의 전 행동을 나중에 전송하지 않습니다.<br>
+SDK는 동의 후 세션·앱 사용 같은 자동 이벤트, 가명 앱 인스턴스 식별자, 앱 버전 및 운영체제 정보 등을 처리할 수 있습니다. Analytics에서 세부 위치·기기 수집을 꺼 도시·도시 좌표·기기 브랜드/모델/이름·운영체제 부버전·화면 해상도의 수집을 제한합니다. IP 기반 국가·지역 등 대략 위치는 처리될 수 있으므로 위치 권한이 없다고 위치 처리 전체가 없는 것은 아니며 완전히 익명인 정보도 아닙니다. 이 Analytics 설정을 별도 광고 SDK의 전체 처리에 적용되는 것으로 설명하지 않습니다. 자동 화면 기록은 비활성화합니다. 앱은 사진·파일명·경로·URI·사진 EXIF·GPS·촬영일·묶음 제목·개별 판단·정확 위치·이메일·사용자 입력을 이벤트에 넣지 않습니다.<br>
+SDK는 first_open, session_start, user_engagement와 같은 자동 이벤트와 홈 광고 SDK 연동에 따른 ad_query 등의 광고 관련 자동 이벤트를 처리할 수 있습니다. 앱이 직접 기록하는 단계 이벤트의 허용 목록과 SDK의 자동 이벤트 범위는 다릅니다. 자동 이벤트에 광고 이벤트 식별자 등이 포함될 수 있으며, 이를 Android 광고 ID나 앱이 설정한 사용자 ID와 같은 것으로 설명하지 않습니다. 광고 동의와 사용 기록 선택은 별도입니다.<br>
+공식 데이터 수집 안내: <a href="https://support.google.com/analytics/answer/11582702">https://support.google.com/analytics/answer/11582702</a><br>
+앱은 분석 사용자 ID를 설정하지 않고 Analytics의 광고 ID 수집을 끕니다. 사용 기록 선택으로 Analytics의 광고 저장·광고 사용자 데이터·광고 개인화를 허용하지 않습니다. 광고 동의는 별도로 처리됩니다.<br>
+끄면 새 앱 이벤트를 중단하고 SDK의 로컬 분석 데이터·앱 인스턴스 식별자를 초기화합니다. 이미 서버에 전송된 정보까지 기기에서 즉시 지우는 기능은 아닙니다. Analytics의 사용자·이벤트 수준 보관은 2개월, 새 활동에 따른 사용자 보관 기간 연장은 끔으로 설정했습니다. 변경은 저장 후 24시간 뒤 적용되며 만료 데이터는 월별 삭제 절차로 처리됩니다. 표준 집계 보고서는 이 보관 설정의 적용 대상이 아닙니다. 로그인이 없어 이메일 주소만으로 특정 설치의 분석 기록을 찾아 삭제할 수 있다고 약속하지 않습니다. 이미 전송 중인 요청이나 SDK의 비동기 처리까지 즉시 취소된다고 보장하지 않습니다. 삭제 관련 문의는 아래 개발자 이메일로 할 수 있으나, 특정 설치를 식별할 수 없는 경우 해당 설치의 서버 기록 삭제를 보장할 수 없습니다. Google의 처리·권리 행사 안내는 아래 공식 개인정보처리방침에서 확인할 수 있습니다.</p></section>
+<p>Google Analytics for Firebase는 Google LLC(미국)가 제공하는 별도 분석 서비스이며 한국어 Google Analytics 약관이 적용됩니다. 앱 개선과 사용 단계·고정 오류 발생 측정을 위해 위 분석 항목이 동의 후 사용 시 HTTPS로 Google에 전송됩니다. 네트워크 연결 상태에 따라 SDK의 로컬 대기 기록이 나중에 전송될 수 있습니다.<br>
+국외 처리 범위는 미국 및 Google의 글로벌 데이터센터 소재국 등 Google 또는 하위 처리자의 시설이 있는 국가입니다. Google은 일반적으로 출발지 가까운 수집 센터를 이용하고 전 세계 시설에서 처리할 수 있습니다. 미국에서만 처리하거나 한국에만 저장한다고 보장하지 않습니다. 앱에서 처리 국가·저장 위치를 선택하는 기능은 없으며, 개별 기록의 실제 처리 국가·시설을 앱에서 확인할 수 없습니다. 아래 공식 시설 목록은 Google 시설의 안내이며 특정 설치의 고정 처리 위치를 뜻하지 않습니다.<br>
+Google의 GA4 안내에 따르면 IP 주소는 수집 시 위치 산출 등에 사용된 뒤 데이터센터·서버 로그에 기록되기 전에 폐기됩니다. 이 앱의 Analytics 세부 위치 수집은 꺼져 있으며 국가·지역 등 대략 위치는 처리될 수 있습니다. 사진 EXIF·GPS와 정확한 기기 위치를 전송하지 않는 앱 동작과 IP 기반 대략 위치 처리는 구분됩니다. 이 설명은 AdMob의 별도 처리 전체에 적용되지 않습니다.<br>
+Google Analytics 한국어 약관: <a href="https://www.google.com/analytics/terms/kr.html">https://www.google.com/analytics/terms/kr.html</a><br>
+광고·분석 서비스 국외 처리 안내: <a href="https://business.safety.google/adsdatatransfers/">https://business.safety.google/adsdatatransfers/</a><br>
+Google 공식 데이터센터 시설 목록: <a href="https://www.google.com/about/datacenters/locations/">https://www.google.com/about/datacenters/locations/</a><br>
+Google 분석 데이터 처리 조건: <a href="https://business.safety.google/adsprocessorterms/">https://business.safety.google/adsprocessorterms/</a><br>
+GA4 지역별 수집·IP 처리 안내: <a href="https://support.google.com/analytics/answer/11598602?hl=en">https://support.google.com/analytics/answer/11598602?hl=en</a><br>
+세부 위치·기기 수집 설정 안내: <a href="https://support.google.com/analytics/answer/12017362">https://support.google.com/analytics/answer/12017362</a><br>
+분석 데이터 보관 안내: <a href="https://support.google.com/analytics/answer/7667196">https://support.google.com/analytics/answer/7667196</a><br>
+Google 개인정보처리방침·처리 안내: <a href="https://policies.google.com/privacy?hl=ko">https://policies.google.com/privacy?hl=ko</a><br>
+Google 전 세계 서버·국외 처리 안내: <a href="https://policies.google.com/privacy/frameworks?hl=en-US">https://policies.google.com/privacy/frameworks?hl=en-US</a></p>
+<section><h2>4. 오류 보고</h2><p>매듭 0.8.1에는 Crashlytics 자동 예외 보고가 없습니다. 자동 fatal 예외 메시지에 사진 경로 등이 담길 수 있어 Crashlytics SDK를 포함하거나 활성화하지 않습니다. 사용 기록 참여를 켠 경우에만 앞 절의 고정 단계·실패 코드를 사용 이벤트로 측정하며 원본 예외 객체·메시지·스택은 전송하지 않습니다. 의견 보내기는 사용자가 메일 앱에서 내용을 확인하고 직접 보내는 별도 기능입니다.</p></section>
+<section><h2>5. 홈 광고, 네트워크와 제3자</h2><p>0.8.0에는 Google AdMob 배너와 Google User Messaging Platform(UMP)이 포함됩니다. 광고는 홈의 사진 묶음 목록과 하단 메뉴 아래에만 표시하며, 사진 선택·크게 보기·한 장씩 보기·최종 삭제 화면에는 표시하지 않습니다. 사진 정리 기능은 인터넷 연결 없이 사용할 수 있습니다. 광고 SDK가 없는 이전 0.7 배포 빌드에는 이 광고 항목이 적용되지 않습니다.<br>
+앱은 사진 원본·파일명·저장 경로·촬영 정보·남김/정리 판단을 광고 요청에 넣지 않습니다. Google 광고 SDK는 광고 제공, 분석, 부정행위 방지를 위해 IP 주소와 이를 통한 대략적인 위치, 앱·광고 상호작용, 진단 정보, 광고 ID·앱 세트 ID 등 기기 또는 기타 식별자를 수집·공유할 수 있습니다. 광고 및 동의 SDK가 처리하는 정보는 개발자의 사진 정리 기록과 구분됩니다. 광고 SDK가 수집하는 데이터는 TLS로 전송됩니다.<br>
+앱은 UMP가 광고 요청을 허용한 뒤에만 광고 SDK를 초기화하고 배너를 요청합니다. 동의가 필요한 지역에서는 UMP 동의 화면을 제공하며, 필요한 경우 설정의 ‘광고 개인정보 선택’에서 선택을 변경할 수 있습니다. 동의 화면이나 광고를 받지 못해도 사진 정리 기능은 사용할 수 있습니다. Android 설정에서 광고 ID를 재설정하거나 삭제할 수 있으며, 이는 모든 기기 식별자 처리를 중단하는 것과 같지 않습니다.<br>
+Google의 데이터 이용에 관한 내용은 Google 개인정보처리방침 (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) 및 광고 관련 안내 (<a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a>)에서 확인할 수 있습니다. 앱은 사진·판단 기록을 개발자 서버에 보관하지 않습니다. Google SDK가 수집한 정보의 보관·삭제는 Google의 정책과 설정을 따릅니다.<br>
+이 광고 고지는 앞 절의 선택 사용 분석과 별도입니다. Analytics의 광고 저장·광고 사용자 데이터·광고 개인화 거부 설정이 AdMob의 모든 처리를 중단하는 것은 아닙니다.</p></section>
+<section><h2>6. 삭제와 보관</h2><p>설정의 &#x27;판단 기록 초기화&#x27;는 판단과 완료 기록만 지우며 사진 원본에는 영향을 주지 않습니다. 사진은 사용자가 최종 검토에서 휴지통 이동 또는 영구 삭제를 선택하고 필요한 시스템 승인을 마쳤을 때만 처리됩니다. 휴지통 보관 기간과 복원 가능 여부는 기기에서 확인할 수 있습니다. 영구 삭제는 되돌릴 수 없습니다.<br>
+앱 내부 기록은 사용자가 초기화하거나 앱 데이터 삭제·앱 제거를 할 때까지 보관합니다. 캐시는 운영체제의 앱 설정에서 지울 수 있습니다. 앱 기록의 클라우드 백업과 기기 간 전송은 비활성화합니다.</p></section>
+<section><h2>7. 접근 권한 변경</h2><p>기기 설정의 앱 권한에서 사진 접근을 취소하거나 허용 범위를 바꿀 수 있습니다. 접근을 거부하면 사진 정리 기능을 사용할 수 없습니다.</p></section>
+<section><h2>8. 문의와 변경 안내</h2><p>개발자 표시명: gagadodo<br>
+개인정보 문의 이메일: kmymgd@gmail.com<br>
+공개 정책 URL: <a href="https://wekinu.github.io/maedeup-privacy.html">https://wekinu.github.io/maedeup-privacy.html</a><br>
+이 방침은 0.8.1부터 추가된 선택 사용 기록을 포함합니다. 처리 항목과 목적이 바뀌면 방침을 갱신하고 필요한 경우 선택을 다시 받습니다. 사용 기록 거부·철회는 사진 접근 권한과 별개이며 사진 정리 기능에 불이익을 주지 않습니다.</p></section></main></body></html>
