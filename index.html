@@ -2,11 +2,12 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<link rel="icon" type="image/png" href="/qrtransfer-icon.png">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>QRTransfer · QR로 가볍게 주고받기</title>
-<meta name="description" content="텍스트·연락처·명함을 QR로 주고받는 Android 앱. 인터넷이나 회원가입 없이 동작합니다.">
+<meta name="description" content="텍스트·연락처·명함을 QR로 주고받는 Android 앱. QR 공유는 인터넷이나 회원가입 없이 동작합니다.">
 <style>
-  :root{--bg:#f3f6fc;--surface:#fff;--ink:#1c2a3a;--muted:#5b6b80;--line:#dfe6f0;--accent:#2f5fd9;--accent-soft:#e8eefc}
+  :root{--bg:#f5f1e9;--surface:#fffdf8;--ink:#34322e;--muted:#706c64;--line:#dfd8cc;--accent:#64776a;--accent-soft:#e6ede3}
   @media (prefers-color-scheme:dark){:root{--bg:#0f151d;--surface:#161f2a;--ink:#e7edf5;--muted:#93a3b8;--line:#26303e;--accent:#6f9bff;--accent-soft:#1c2740}}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Noto Sans KR",system-ui,-apple-system,"Malgun Gothic",sans-serif}
@@ -27,8 +28,11 @@
 <body>
 <div class="wrap">
   <span class="eyebrow">Android 10 이상 · 텍스트와 연락처 중심</span>
+  <img src="/qrtransfer-icon.png" width="88" height="88" alt="QRTransfer 앱 아이콘" style="display:block;border-radius:20px;margin:0 0 20px">
   <h1>QRTransfer</h1>
   <p class="lead">가까이서 가볍게 나누세요.<br>텍스트·연락처·명함을 QR로 주고받습니다.</p>
+
+  <p><a href="https://play.google.com/store/apps/details?id=qrx.app">Google Play에서 QRTransfer 보기</a></p>
 
   <section>
     <h2><span class="dot"></span>보내고, 카메라로 읽으세요</h2>
@@ -37,9 +41,10 @@
   </section>
 
   <section>
-    <h2><span class="dot"></span>개인정보와 광고</h2>
+    <h2><span class="dot"></span>개인정보와 광고·선택적 분석</h2>
     <p>QR 내용은 광고 요청에 넣지 않습니다. 홈 배너와 Google 동의 설정은 인터넷을 사용합니다. QR는 암호화되지 않으므로 주변에서 화면을 볼 수 있는 사람이 내용을 읽을 수 있습니다.</p>
-    <p><a href="privacy-policy.html">개인정보처리방침 읽기</a></p>
+    <p>0.6.2의 사용 분석은 선택 사항이며 기본값은 꺼짐입니다. 설정에서 방침을 읽고 허용하거나 끄기 및 초기화를 선택할 수 있습니다. 분석을 꺼도 QR 공유는 사용할 수 있으며 광고 선택과는 별개입니다.</p>
+    <p><a href="privacy-policy.html">개인정보처리방침 읽기</a> · <a href="privacy-policy-en.html" lang="en">Privacy policy in English</a></p>
   </section>
 
   <section>
