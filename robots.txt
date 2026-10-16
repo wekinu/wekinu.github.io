@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wekinu.github.io/sitemap.xml
